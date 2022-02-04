@@ -3,6 +3,7 @@ import Announce from './components/announce/Announce';
 import Home from './components/home/Home';
 
 import './App.css';
+import PostAnnounce from './components/postAnnounce/Postannounce';
 
 const App = () => (
   <>
@@ -10,6 +11,7 @@ const App = () => (
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path="/announce" element={<Announce />} />
+        <Route path="/postAnnounce" element={<PostAnnounce />} />
       </Routes>
     </Router>
   </>

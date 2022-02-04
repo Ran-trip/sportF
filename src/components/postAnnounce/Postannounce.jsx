@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-import './postAnnounce.css';
+import './postannounce.css';
 
 const PostAnnounce = () => {
     const { id } = useParams();
@@ -21,6 +21,7 @@ const PostAnnounce = () => {
         });
       };
   return (
+  
   <div className="postAnnounce">
     <div className="containerinput">
         <label htmlFor="name">
@@ -29,7 +30,7 @@ const PostAnnounce = () => {
     </div>
     <div className="containerinput">
         <label htmlFor="contact">
-          <input id="contact" name="contact" type="contact" onChange={(event) => setContact(event.target.value)} placeholder="Vos contact" />
+          <input id="contact" name="contact" type="contact" onChange={(event) => setContact(event.target.value)} placeholder="Vos contacts" />
         </label>
     </div>
     <div className="containertextarea">
@@ -46,6 +47,7 @@ const PostAnnounce = () => {
         <button className="buttonPostAnnouncce" type="submit" onClick={handleClickPostAnnouncement}>Envoyer</button>
     </div>
   </div>
+  
   );
 };
 
