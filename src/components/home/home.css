@@ -1,3 +1,32 @@
 *{
     margin: 0;
 }
+
+.hometext {
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+
+.secondtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.sport-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footstyle {
+    width: 60%;
+    height: auto;
+}
+
+.basketstyle {
+    margin: 15rem 1rem;
+    padding: 1rem 1rem;
+    width: 40%;
+    height: auto;
+}
